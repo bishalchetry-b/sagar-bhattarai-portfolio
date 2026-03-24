@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sagar Bhattarai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background:#0A192F;
+  color:#fff;
+  scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(10,25,47,0.8);
+  backdrop-filter: blur(10px);
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 60px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  margin:15px 0;
+  color:#ccc;
+}
+
+.btn{
+  padding:12px 25px;
+  margin-right:10px;
+  border:none;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.primary{
+  background:#00D1FF;
+  color:#000;
+}
+
+.outline{
+  border:1px solid #00D1FF;
+  background:transparent;
+  color:#00D1FF;
+}
+
+/* Sections */
+section{
+  padding:100px 60px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#112240;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px #00D1FF;
+}
+
+/* Stats */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.stats h2{
+  font-size:40px;
+  color:#00D1FF;
+}
+
+/* Contact */
+.contact{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020c1b;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div><b>Dr. Sagar</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div>
+    <h1>Dr. Sagar Bhattarai</h1>
+    <p>Scientist & Innovator | Solar Energy Researcher</p>
+    <p>World’s TOP 2% Scientist (2024–2025) – Stanford University</p>
+    <button class="btn primary">View Research</button>
+    <button class="btn outline">Contact</button>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Dr. Sagar Bhattarai is a leading researcher in renewable energy and perovskite solar cell technology. 
+    With over 100+ publications and global collaborations, his work focuses on developing high-efficiency, 
+    low-cost, and eco-friendly solar energy solutions.
+  </p>
+</section>
+
+<!-- Expertise -->
+<section>
+  <h2>Expertise</h2>
+  <div class="cards">
+    <div class="card">Solar Energy Systems</div>
+    <div class="card">Perovskite Solar Cells</div>
+    <div class="card">Photovoltaic Technology</div>
+    <div class="card">Renewable Innovation</div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section>
+  <div class="stats">
+    <div>
+      <h2>100+</h2>
+      <p>Publications</p>
+    </div>
+    <div>
+      <h2>30%</h2>
+      <p>Efficiency Achieved</p>
+    </div>
+    <div>
+      <h2>Top 2%</h2>
+      <p>Scientist Rank</p>
+    </div>
+  </div>
+</section>
+
+<!-- Research -->
+<section id="research">
+  <h2>Research & Projects</h2>
+  <div class="cards">
+    <div class="card">Perovskite Solar Cell Design</div>
+    <div class="card">Lead-Free Solar Technology</div>
+    <div class="card">High Efficiency PV Systems</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: sagarbhattarai012@gmail.com</p>
+  <button class="btn primary">Collaborate Now</button>
+</section>
+
+<!-- Footer -->
+<footer>
+  Powered by Innovation & Solar Energy
+</footer>
+
+</body>
+</html>
